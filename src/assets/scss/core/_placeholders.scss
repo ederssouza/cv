@@ -1,0 +1,17 @@
+%center-block {
+  display: block;
+  margin: {
+    left:  auto;
+    right:  auto;
+  }
+}
+
+%clearfix {
+
+  &:before,
+  &:after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+}

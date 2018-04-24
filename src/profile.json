@@ -1,0 +1,171 @@
+{
+  "profile": {
+    "name": "Eder Sampaio",
+    "avatar": "https://avatars0.githubusercontent.com/u/3737645?s=460&v=4",
+    "occupation": "Front-End Developer",
+    "resume": "Formado em Gestão da Tecnologia da Informação, apaixonado por Front-End, web performance e UX."
+  },
+  "medias": [
+    {
+      "link": "//linkedin.com/in/ederssouza",
+      "title": "LinkedIn",
+      "icon": "ion-social-linkedin"
+    },
+    {
+      "link": "//github.com/ederssouza",
+      "title": "GitHub",
+      "icon": "ion-social-github"
+    }
+  ],
+	"skills": [
+    {
+			"name": "VueJS",
+			"percent": 80
+		},
+		{
+			"name": "Webpack",
+			"percent": 90
+		},
+		{
+			"name": "JavaScript",
+			"percent": 90
+		},
+		{
+			"name": "Sass",
+			"percent": 100
+		},
+		{
+			"name": "CSS",
+			"percent": 100
+		},
+		{
+			"name": "Git",
+			"percent": 90
+		},
+		{
+			"name": "HTML5",
+			"percent": 100
+		},
+		{
+			"name": "Linux",
+			"percent": 80
+		}
+	],
+	"experiences": [
+    {
+			"name": "Front-End Developer",
+			"company": {
+        "name": "Gold 360",
+        "image": null
+      },
+			"start": "out de 2017",
+			"end": "o momento"
+    },
+    {
+			"name": "Front-End Developer",
+			"company": {
+        "name": "GFT Group",
+        "image": null
+      },
+			"start": "nov de 2015",
+			"end": "set de 2017"
+    },
+    {
+			"name": "Front-End Developer",
+			"company": {
+        "name": "BRQ IT Solutions",
+        "image": null
+      },
+			"start": "set de 2014",
+			"end": "nov de 2015"
+    },
+    {
+			"name": "Front-End Developer",
+			"company": {
+        "name": "Agência MGF Arte",
+        "image": null
+      },
+			"start": "abr de 2013",
+			"end": "abr de 2014"
+    }
+	],
+	"education": [
+    {
+      "course": "Tecnólogo em Gestão da Tecnologia da Informação",
+      "institution": "Faculdade Sumaré",
+      "start": 2010,
+      "end": 2013
+    }
+  ],
+	"courses": [
+    {
+			"name": "Introdução ao Vue JS 2",
+			"company": {
+				"name": "Udemy",
+				"image": "https://media.licdn.com/mpr/mpr/shrink_100_100/AAMAAwQIAAkAAQAAAAAAAA5EAAAAJGIwOGUxNjgwLTFhNDItNGRlOS1iMjc2LTU5NmY4NmMyODkzMg.bin"
+			},
+			"workload": 40
+		},
+		{
+			"name": "Gulp: automação de tarefas front-end",
+			"company": {
+				"name": "Alura",
+				"image": "https://media.licdn.com/mpr/mpr/shrink_100_100/AAMABAQIAAkAAQAAAAAAABGhAAAAJGZlM2I1OGRiLTI5YjgtNDYwYy04YmY2LTY3NTZjZjJkNGYzYw.bin"
+			},
+			"workload": 40
+		},
+		{
+			"name": "Performance Web I",
+			"company": {
+				"name": "Alura",
+				"image": "https://media.licdn.com/mpr/mpr/shrink_100_100/AAMABAQIAAkAAQAAAAAAABGhAAAAJGZlM2I1OGRiLTI5YjgtNDYwYy04YmY2LTY3NTZjZjJkNGYzYw.bin"
+			},
+			"workload": 40
+		},
+		{
+			"name": "Expressões regulares",
+			"company": {
+				"name": "Alura",
+				"image": "https://media.licdn.com/mpr/mpr/shrink_100_100/AAMABAQIAAkAAQAAAAAAABGhAAAAJGZlM2I1OGRiLTI5YjgtNDYwYy04YmY2LTY3NTZjZjJkNGYzYw.bin"
+			},
+			"workload": 40
+		}
+	],
+	"testimonials": [
+    {
+			"name": "Jozias Rolim",
+			"office": "Data Scientist na Gold 360",
+			"image": "https://media.licdn.com/dms/image/C4E03AQHOr8Su5pISZA/profile-displayphoto-shrink_100_100/0?e=1529708400&v=beta&t=7S_-YKmsLkY5V-N6B1zokbKK7Lp63GTSFRKtwwbZij8",
+			"msg": "Um excelente profissional! Dedicado ao trabalho e sempre disposto a ajudar seus colegas. Sua alta disponibilidade para ajudar as pessoas é um característica marcante desse excelente profissional. Apresenta dificuldades e alternativas na resolução de problemas, tem um perfil crítico e analítico. Foi uma honra poder ter compartilhado experiências com o Eder Sampaio.",
+			"connection": "Em 19 de abril de 2018, Jozias era cliente de Eder"
+		},
+    {
+			"name": "André Vitor Cuba de Miranda",
+			"office": "System Software Engineer",
+			"image": "https://media.licdn.com/dms/image/C5603AQGLAGY8AfKZtQ/profile-displayphoto-shrink_800_800/0?e=1526990400&v=alpha&t=7zxoU0nAdsO0nCm92tiJpxv5h1edeU_2GAK-_1cLgWs",
+			"msg": "É preciso pouquíssimo tempo para perceber toda qualidade e profissionalismo presente no trabalho do Eder. Aprendi de forma abundante e profunda conceitos e técnicas sobre web, ux e frontend em geral. Ainda me surpreendo com tamanho conhecimento que ele detém na área e como é compensador e satisfatório tê-lo na equipe. Espero futuramente ter novas oportunidades de trabalharmos juntos e quem sabe compensar parte de todo o conhecimento que ele sempre esteve disposto a ensinar e compartilhar.",
+			"connection": "Em 14 de novembro de 2017, André Vitor trabalhava com Eder, mas em empresas diferentes"
+		},
+		{
+			"name": "Anderson Fernandes Mendes",
+			"office": "Project Thinker | Business Designer",
+			"image": "https://media.licdn.com/dms/image/C4D03AQEIvP9_Jad_vQ/profile-displayphoto-shrink_800_800/0?e=1526990400&v=alpha&t=I9H6S1s23D_fSmkAdzLzlpA_cBAQJ4fRk67KGuOF6F4",
+			"msg": "Eder é um excelente profissional, dedicado, e competente. Superou as expectativas das atividades que lhe foram destinadas e trouxe ótimas ideias para equipe.",
+			"connection": "Em 6 de agosto de 2015, Anderson supervisionava Eder diretamente"
+		},
+		{
+			"name": "Hugo Claret",
+			"office": "Senior UX/UI Specialist / Digital Project Manager",
+			"image": "https://media.licdn.com/dms/image/C4D03AQFNyHrm0zn4lA/profile-displayphoto-shrink_800_800/0?e=1526990400&v=alpha&t=_HhEZBozeTS4TWUpJ09YNVPF7oIOMtOO4TuCMaxsyTQ",
+			"msg": "Excelente profissional, detalhista e habilidoso em todas as suas atividades. Possui uma visão coerente, inovadora e altamente produtiva no desenvolvimento Front, sendo assim capaz de mostrar seu conhecimento técnico num todo.",
+			"connection": "Em 16 de maio de 2015, Eder trabalhava com Hugo no mesmo grupo"
+		},
+		{
+			"name": "Henrique Lima",
+			"office": "CTO at Orbitall",
+			"image": "https://media.licdn.com/dms/image/C5603AQEQpxwU16uAqA/profile-displayphoto-shrink_800_800/0?e=1526990400&v=alpha&t=Q_XrzpQl0VNLyCFtj5IDKt2qfKNIk2Phvnl7xyQqHCs",
+			"msg": "Eder, sem dúvida nenhuma, é um dos melhores front-end developers com que pude trabalhar. Alta produtividade, foco e capacidade de criação mostraram resultados impressionantes no site da Akatus e no dashboard de clientes. ",
+			"connection": "Em 25 de julho de 2014, Henrique supervisionava Eder diretamente"
+		}
+	]
+}
