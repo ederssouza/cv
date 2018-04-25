@@ -8,7 +8,7 @@ const Page404 = () => System.import('../components/Page404')
 Vue.use(Router)
 
 export default new Router({
-  // mode: 'history',
+  mode: 'history',
   routes: [
     {
       path: '/',
