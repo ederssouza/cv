@@ -18,24 +18,29 @@
                 <i class="fas fa-cog fa-pulse"></i>
               </div>
 
-              <ul class="repos row" v-if="!loading && repos">
-                <li v-for="(repo, index) in orderBy(repos, 'stargazers_count', -1)" :key="`repo-${index}`" class="col-sm-4">
-                  <a :href="repo.html_url" :title="repo.name" target="_blank" class="repo">
-                    <header class="repo-header">
-                      <i v-if="repo.language === 'JavaScript'" class="fab fa-js"></i>
-                      <i v-else-if="repo.language === 'HTML'" class="fab fa-html5"></i>
-                      <i v-else-if="repo.language === 'CSS'" class="fab fa-css3-alt"></i>
-                      <i v-else-if="repo.language === 'Vue'" class="fab fa-vuejs"></i>
-                      <i v-else class="fab fa-github"></i>
-                    </header>
+              <div v-if="!loading && reposPaginate">
+                <ul class="repos row">
+                  <li v-for="(repo, index) in orderBy(reposPaginate, 'stargazers_count', -1)" :key="`repo-${index}`" class="col-sm-4">
+                  <!-- <li v-for="(repo, index) in orderBy(reposPaginate, 'stargazers_count', -1)" :key="`repo-${index}`" class="col-sm-4"> -->
+                    <a :href="repo.html_url" :title="repo.name" target="_blank" class="repo">
+                      <header class="repo-header">
+                        <i v-if="repo.language === 'JavaScript'" class="fab fa-js"></i>
+                        <i v-else-if="repo.language === 'HTML'" class="fab fa-html5"></i>
+                        <i v-else-if="repo.language === 'CSS'" class="fab fa-css3-alt"></i>
+                        <i v-else-if="repo.language === 'Vue'" class="fab fa-vuejs"></i>
+                        <i v-else class="fab fa-github"></i>
+                      </header>
 
-                    <div class="repo-body">
-                      <h2 class="repo-title">{{ repo.name }}</h2>
-                      <p><small><i class="far fa-star"></i> Stars {{ repo.stargazers_count }} | <i class="fas fa-code-branch"></i> Forks {{ repo.forks }}</small></p>
-                    </div>
-                  </a>
-                </li>
-              </ul>
+                      <div class="repo-body">
+                        <h2 class="repo-title">{{ repo.name }}</h2>
+                        <p><small><i class="far fa-star"></i> Stars {{ repo.stargazers_count }} | <i class="fas fa-code-branch"></i> Forks {{ repo.forks }}</small></p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+
+                <button @click="loadMoreRepos" v-if="loadMore">Carregar mais</button>
+              </div>
             </div>
           </section><!-- /.section -->
         </div><!-- /.content -->
@@ -67,6 +72,12 @@ export default {
       profile: json.profile,
       gitHubUser: 'ederssouza',
       repos: null,
+      reposPaginate: null,
+      paginator: {
+        items: 6,
+        page: 0,
+      },
+      loadMore: true,
     }
   },
   metaInfo () {
@@ -85,13 +96,27 @@ export default {
         .then(res => {
           return res = res.json()
         }).then(res => {
-          this.repos = res
+          this.repos = res;
+          this.reposPaginate = this.paginate(res, this.paginator.items, this.paginator.page);
           this.loading = false;
         }).catch(err => {
           console.error(err);
           this.loading = false;
           this.repos = null;
         });
+    },
+    paginate(array, items, page) {
+      return array.slice(page * items, (page + 1) * items);
+    },
+    loadMoreRepos() {
+      this.loadMore = false;
+
+      const paginate = this.paginate(this.repos, this.paginator.items, this.paginator.page += 1);
+      this.reposPaginate = this.reposPaginate.concat(paginate);
+
+      if (this.repos.length !== this.reposPaginate.length) {
+        this.loadMore = true;
+      }
     }
   },
   mounted() {
