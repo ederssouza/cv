@@ -20,8 +20,8 @@
 
               <div v-if="!loading && reposPaginate">
                 <ul class="repos row">
-                  <li v-for="(repo, index) in orderBy(reposPaginate, 'stargazers_count', -1)" :key="`repo-${index}`" class="col-sm-4">
                   <!-- <li v-for="(repo, index) in orderBy(reposPaginate, 'stargazers_count', -1)" :key="`repo-${index}`" class="col-sm-4"> -->
+                  <li v-for="(repo, index) in reposPaginate" :key="`repo-${index}`" class="col-sm-4">
                     <a :href="repo.html_url" :title="repo.name" target="_blank" class="repo">
                       <header class="repo-header">
                         <i v-if="repo.language === 'JavaScript'" class="fab fa-js"></i>
