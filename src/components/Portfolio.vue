@@ -14,7 +14,7 @@
                 <small>projetos no github</small>
               </h1>
 
-              <div class="fa-5x loading text-center" v-if="loading">
+              <div class="fa-4x loading text-center" v-if="loading">
                 <i class="fas fa-cog fa-pulse"></i>
               </div>
 
@@ -39,7 +39,11 @@
                   </li>
                 </ul>
 
-                <button @click="loadMoreRepos" v-if="loadMore">Carregar mais</button>
+                <div class="loadmore" v-if="loadMore">
+                  <button :disabled="loadingMore" class="btn" @click="loadMoreRepos">
+                    {{ loadingMore ? 'Carregando...' : 'Carregar mais' }}
+                  </button>
+                </div>
               </div>
             </div>
           </section><!-- /.section -->
@@ -77,7 +81,8 @@ export default {
         items: 6,
         page: 0,
       },
-      loadMore: true,
+      loadMore: false,
+      loadingMore: false,
     }
   },
   metaInfo () {
@@ -99,24 +104,29 @@ export default {
           this.repos = res;
           this.reposPaginate = this.paginate(res, this.paginator.items, this.paginator.page);
           this.loading = false;
+          this.loadMore = true;
         }).catch(err => {
-          console.error(err);
           this.loading = false;
           this.repos = null;
+          console.error(err);
         });
     },
     paginate(array, items, page) {
       return array.slice(page * items, (page + 1) * items);
     },
     loadMoreRepos() {
-      this.loadMore = false;
+      this.loadingMore = true;
+      console.log(this.repos.length, this.reposPaginate.length);
+      window.setTimeout(() => {
+        const paginate = this.paginate(this.repos, this.paginator.items, this.paginator.page += 1);
+        this.reposPaginate = this.reposPaginate.concat(paginate);
 
-      const paginate = this.paginate(this.repos, this.paginator.items, this.paginator.page += 1);
-      this.reposPaginate = this.reposPaginate.concat(paginate);
+        if (this.repos.length === this.reposPaginate.length) {
+          this.loadMore = false;
+        }
 
-      if (this.repos.length !== this.reposPaginate.length) {
-        this.loadMore = true;
-      }
+        this.loadingMore = false;
+      }, 500);
     }
   },
   mounted() {
@@ -221,7 +231,52 @@ export default {
 }
 
 .loading {
-  padding: 40px 0;
   color: #ccc;
+  padding: 40px 0;
+}
+
+.loadmore {
+  border-top: 1px solid #eee;
+  text-align: center;
+  margin-top: 25px;
+  padding: 20px 0 0;
+}
+
+.btn {
+  background-color: #14c8c8;
+  background-image: none;
+  border: 1px solid transparent;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  margin-bottom: 0;
+  min-width: 200px;
+  padding: 8px 15px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  @include border-radius(20px);
+  @include transition(background-color .26s, opacity .26s);
+
+  &:hover {
+    background-color: darken(#14c8c8, 2);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &[disabled] {
+    opacity: .8;
+  }
 }
 </style>
