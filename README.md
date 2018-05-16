@@ -1,4 +1,4 @@
-# Project Title
+# Web Curriculum
 
 A simple web curriculum contructed with [Vue.js](https://vuejs.org/) and utilizing [webpack-simple](https://github.com/vuejs-templates/webpack-simple) as structure. [Click here](https://ederssouza.github.io) for preview.
 
