@@ -19,13 +19,13 @@
   ],
 	"skills": [
     {
-			"name": "VueJS",
+			"name": "Vue.js",
 			"percent": 80
 		},
 		{
 			"name": "Webpack",
-			"percent": 90
-		},
+			"percent": 80
+    },
 		{
 			"name": "JavaScript",
 			"percent": 90
@@ -35,20 +35,36 @@
 			"percent": 100
 		},
 		{
-			"name": "CSS",
+			"name": "CSS3",
 			"percent": 100
+    },
+		{
+			"name": "HTML5",
+			"percent": 100
+    },
+    {
+			"name": "Gulp.js",
+			"percent": 100
+    },
+    {
+			"name": "Web performance",
+			"percent": 90
 		},
 		{
 			"name": "Git",
 			"percent": 90
-		},
-		{
-			"name": "HTML5",
-			"percent": 100
+    },
+    {
+			"name": "Docker",
+			"percent": 70
 		},
 		{
 			"name": "Linux",
 			"percent": 80
+		},
+		{
+			"name": "Scrum",
+			"percent": 90
 		}
 	],
 	"experiences": [
@@ -99,15 +115,15 @@
   ],
 	"courses": [
     {
-			"name": "Introdução ao Vue JS 2",
+			"name": "JS com TDD na Prática",
 			"company": {
 				"name": "Udemy",
 				"image": "https://media.licdn.com/mpr/mpr/shrink_100_100/AAMAAwQIAAkAAQAAAAAAAA5EAAAAJGIwOGUxNjgwLTFhNDItNGRlOS1iMjc2LTU5NmY4NmMyODkzMg.bin"
 			},
-			"workload": 40
+			"workload": 15
 		},
 		{
-			"name": "Gulp: automação de tarefas front-end",
+			"name": "Performance Web I e II",
 			"company": {
 				"name": "Alura",
 				"image": "https://media.licdn.com/mpr/mpr/shrink_100_100/AAMABAQIAAkAAQAAAAAAABGhAAAAJGZlM2I1OGRiLTI5YjgtNDYwYy04YmY2LTY3NTZjZjJkNGYzYw.bin"
@@ -115,20 +131,36 @@
 			"workload": 40
 		},
 		{
-			"name": "Performance Web I",
+			"name": "Vue.js módulos 1 e 2",
 			"company": {
 				"name": "Alura",
 				"image": "https://media.licdn.com/mpr/mpr/shrink_100_100/AAMABAQIAAkAAQAAAAAAABGhAAAAJGZlM2I1OGRiLTI5YjgtNDYwYy04YmY2LTY3NTZjZjJkNGYzYw.bin"
 			},
-			"workload": 40
+			"workload": 32
 		},
 		{
-			"name": "Expressões regulares",
+			"name": "Webpack",
 			"company": {
 				"name": "Alura",
 				"image": "https://media.licdn.com/mpr/mpr/shrink_100_100/AAMABAQIAAkAAQAAAAAAABGhAAAAJGZlM2I1OGRiLTI5YjgtNDYwYy04YmY2LTY3NTZjZjJkNGYzYw.bin"
 			},
-			"workload": 40
+			"workload": 8
+    },
+    {
+			"name": "Chrome DevTools",
+			"company": {
+				"name": "Alura",
+				"image": "https://media.licdn.com/mpr/mpr/shrink_100_100/AAMABAQIAAkAAQAAAAAAABGhAAAAJGZlM2I1OGRiLTI5YjgtNDYwYy04YmY2LTY3NTZjZjJkNGYzYw.bin"
+			},
+			"workload": 9
+		},
+    {
+			"name": "Jasmine: Testes automatizados em JavaScript",
+			"company": {
+				"name": "Alura",
+				"image": "https://media.licdn.com/mpr/mpr/shrink_100_100/AAMABAQIAAkAAQAAAAAAABGhAAAAJGZlM2I1OGRiLTI5YjgtNDYwYy04YmY2LTY3NTZjZjJkNGYzYw.bin"
+			},
+			"workload": 12
 		}
 	],
 	"testimonials": [

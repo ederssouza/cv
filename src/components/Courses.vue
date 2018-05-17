@@ -4,7 +4,7 @@
       <img :src="course.company.image" :alt="course.company.name" :title="course.company.name">
       <div class="course-info">
         <span class="course-title">{{ course.name }}</span>
-        <span class="course-subtitle" v-if="course.company.name">{{ course.company.name }} | <i class="ion-calendar"></i> {{ course.workload }}</span>
+        <span class="course-subtitle" v-if="course.company.name">{{ course.company.name }} | <i class="ion-calendar"></i> {{ course.workload }} horas</span>
       </div>
     </li>
   </ul>
