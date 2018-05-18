@@ -61,7 +61,6 @@ $ npm run deploy
 
 ## Something in the future?
 
-- [ ] Mobile version
 - [ ] Get LinkedIn data dynamic
 - [ ] Contact form
 
