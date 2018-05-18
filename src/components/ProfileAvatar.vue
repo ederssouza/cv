@@ -26,10 +26,13 @@ export default {
   position: relative;
 
   a {
-    display: inline-block;
+    background-color: #fff;
+    display: block;
   }
 
   img {
+    display: block;
+    margin: 0 auto;
     max-width: 100%;
   }
 }

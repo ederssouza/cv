@@ -90,7 +90,7 @@ export default {
       content: "";
       display: block;
       height: $wh;
-      left: (($wh / 2) - 1) * -1;
+      left: (($wh / 2) - 1.5) * -1;
       position: absolute;
       top: 6px;
       width: $wh;

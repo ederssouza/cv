@@ -56,11 +56,15 @@ export default {
   a {
     color: #888;
     display: inline-block;
-    font-size: 16px;
+    font-size: 17px;
     font-variant: small-caps;
     font-weight: 300;
     text-transform: lowercase;
     @include transition(color .26s);
+
+    @media (min-width: 768px) {
+      font-size: 16px;
+    }
 
     &:focus,
     &:hover {

@@ -1,17 +1,23 @@
 <template>
-  <aside class="profile">
+  <aside class="profile-sidebar">
     <cv-profile-avatar :image="profile.avatar" :title="profile.name" />
 
     <nav>
       <ul class="profile-menu">
         <li>
-          <router-link :to="{ name: 'home' }" title="Sobre"><i class="ion-person"></i> Sobre</router-link>
+          <router-link :to="{ name: 'home' }" title="Sobre">
+            <i class="ion-person"></i> <span>Sobre</span>
+          </router-link>
         </li>
         <li>
-          <router-link :to="{ name: 'portfolio' }" title="Portfolio"><i class="ion-person"></i> Portfolio</router-link>
+          <router-link :to="{ name: 'portfolio' }" title="Portfolio">
+            <i class="ion-camera"></i> <span>Portfolio</span>
+          </router-link>
         </li>
         <li>
-          <router-link :to="{ name: 'contact' }" title="Contato"><i class="ion-android-chat"></i> Contato</router-link>
+          <router-link :to="{ name: 'contact' }" title="Contato">
+            <i class="ion-android-chat"></i> <span>Contato</span>
+          </router-link>
         </li>
       </ul>
 
@@ -42,14 +48,30 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.profile-sidebar {
+  margin-bottom: 15px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+
 .profile-menu {
   list-style-type: none;
   margin-bottom: 0;
   padding-left: 0;
+  @extend %clearfix;
 
   li {
+    float: left;
     position: relative;
-    border-bottom: 1px solid #26292e;
+    width: 33.33%;
+
+    @media (min-width: 768px) {
+      border-bottom: 1px solid #26292e;
+      float: none;
+      width: 100%;
+    }
 
     &:last-child {
       border-bottom: none;
@@ -72,10 +94,26 @@ export default {
 
       i {
         font-size: 24px;
-        left: 25px;
+        left: 50%;
         position: absolute;
         top: 50%;
-        @include transform(translateY(-50%));
+        @include transform(translate(-50%, -50%));
+
+        @media (min-width: 768px) {
+          left: 25px;
+          top: 50%;
+          @include transform(translateY(-50%));
+        }
+      }
+
+      span {
+        opacity: 0;
+        visibility: hidden;
+
+        @media (min-width: 768px) {
+          opacity: 1;
+          visibility: visible;
+        }
       }
 
       &:before {

@@ -20,16 +20,6 @@
 
           <section class="section">
             <header class="section-header">
-              <h2 class="section-title">Competências <span>técnicas</span></h2>
-            </header>
-
-            <div class="section-content">
-              <cv-skills :skills="skills" />
-            </div>
-          </section><!-- /.section -->
-
-          <section class="section">
-            <header class="section-header">
               <h2 class="section-title">Experiência <span>profissional</span></h2>
             </header>
 
@@ -50,7 +40,17 @@
 
           <section class="section">
             <header class="section-header">
-              <h2 class="section-title">Cursos</h2>
+              <h2 class="section-title">Competências <span>técnicas</span></h2>
+            </header>
+
+            <div class="section-content">
+              <cv-skills :skills="skills" />
+            </div>
+          </section><!-- /.section -->
+
+          <section class="section">
+            <header class="section-header">
+              <h2 class="section-title">Últimos <span>cursos</span></h2>
             </header>
 
             <div class="section-content">

@@ -39,6 +39,10 @@ export default {
   position: relative;
   @include border-radius(8px);
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   .testimonial-avatar {
     border: 10px solid #fff;
     height: 85px;
