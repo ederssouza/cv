@@ -20,6 +20,8 @@
 </template>
 
 <script>
+import noImage from '../assets/img/no-image.png'
+
 export default {
   name: 'Testimonials',
   props: {
@@ -30,7 +32,8 @@ export default {
   },
   methods: {
     imageLoadError (e) {
-      e.target.setAttribute('src', 'https://www.aurigo.com/wp-content/uploads/2016/01/no-image.png')
+      console.log(noImage)
+      e.target.setAttribute('src', noImage)
     }
   }
 }
