@@ -7,7 +7,9 @@
       class="testimonial-item"
       :class="(index % 2) ? 'even' : 'odd'">
       <div class="testimonial-avatar">
-        <img :src="testimonial.image" :alt="testimonial.name" :title="testimonial.name">
+        <img :src="testimonial.image" :alt="testimonial.name" :title="testimonial.name" @error="imageLoadError">
+        <!-- <span v-if="testimonial.image" style="font-size: 10px;">tem</span> -->
+        <!-- <span v-else style="font-size: 10px;">não tem</span> -->
       </div>
       <span class="testimonial-name">{{ testimonial.name }}</span>
       <span class="testimonial-occupation">{{ testimonial.office }}</span>
@@ -24,6 +26,11 @@ export default {
     testimonials: {
       required: true,
       type: Array
+    }
+  },
+  methods: {
+    imageLoadError (e) {
+      e.target.setAttribute('src', 'https://www.aurigo.com/wp-content/uploads/2016/01/no-image.png')
     }
   }
 }
