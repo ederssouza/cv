@@ -21,15 +21,19 @@
     {
 			"name": "Vue.js",
 			"percent": 80
-		},
-		{
-			"name": "Webpack",
-			"percent": 80
+    },
+    {
+      "name": "React.js",
+      "percent": 60
     },
 		{
 			"name": "JavaScript",
 			"percent": 90
-		},
+    },
+		{
+			"name": "HTML5",
+			"percent": 100
+    },
 		{
 			"name": "Sass",
 			"percent": 100
@@ -39,33 +43,21 @@
 			"percent": 100
     },
 		{
-			"name": "HTML5",
-			"percent": 100
+			"name": "Webpack",
+			"percent": 80
     },
     {
 			"name": "Gulp.js",
 			"percent": 100
     },
     {
-			"name": "Web performance",
-			"percent": 90
-		},
+      "name": "Docker",
+      "percent": 70
+    },
 		{
 			"name": "Git",
 			"percent": 90
-    },
-    {
-			"name": "Docker",
-			"percent": 70
-		},
-		{
-			"name": "Linux",
-			"percent": 80
-		},
-		{
-			"name": "Scrum",
-			"percent": 90
-		}
+    }
 	],
 	"experiences": [
     {
