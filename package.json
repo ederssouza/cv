@@ -1,7 +1,7 @@
 {
   "name": "cv",
   "description": "web cv",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "author": "Eder Sampaio <edersampaio@outlook.com.br>",
   "license": "MIT",
   "private": true,
